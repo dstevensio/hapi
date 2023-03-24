@@ -161,7 +161,7 @@ export interface RouteOptionsCors {
      * character, or a single '*' origin string. If set to 'ignore', any incoming Origin header is ignored (present or not) and the 'Access-Control-Allow-Origin' header is set to '*'. Defaults to any
      * origin ['*'].
      */
-    origin?: string[] | '*' | 'ignore' | undefined;
+    origin?: string[] | 'ignore' | undefined;
     /**
      * number of seconds the browser should cache the CORS response ('Access-Control-Max-Age'). The greater the value, the longer it will take before the browser checks for changes in policy.
      * Defaults to 86400 (one day).
